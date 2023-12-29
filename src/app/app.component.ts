@@ -35,7 +35,7 @@ export class AppComponent {
   async ngOnInit() {
     
     const { TopNavBarComponent } = await loadRemoteModule({
-      remoteEntry: 'http://localhost:6001/topNavHeader.js',
+      remoteEntry: 'https://saswatiaccenture.github.io/Angular-Footer/topNavHeader.js',
       remoteName: 'topNavHeader',
       exposedModule: 'TopNavBarComponent',
     });
@@ -43,13 +43,13 @@ export class AppComponent {
     
 
     const { SideNavBarComponent } = await loadRemoteModule({
-      remoteEntry: 'http://localhost:6002/sideNavBarRemote.js',
+      remoteEntry: 'https://saswatiaccenture.github.io/Angular-SideNav/sideNavBarRemote.js',
       remoteName: 'sideNavBarRemote',
       exposedModule: 'SideNavExposed',
     });
 
     const { ItemDetailsComponent } = await loadRemoteModule({
-      remoteEntry: 'http://localhost:6003/itemDetailsRemote.js',
+      remoteEntry: 'https://saswatiaccenture.github.io/AngularItemDetails/itemDetailsRemote.js',
       remoteName: 'itemDetailsRemote',
       exposedModule: 'ItemDetailsComponent',
     });
